@@ -1,0 +1,77 @@
+@font-face {
+	font-family: "hello-title";
+	src: url("./fonts/opensans/OpenSans-Regular.ttf");
+}
+
+body {
+	padding: 40px 0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+main {
+	position: relative;
+	width: fit-content;
+	max-width: 867px;
+	margin: 0 auto;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+a {
+	opacity: 0;
+	font-size: 12px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background-color: transparent;
+	color: transparent;
+	user-select: none;
+	border-radius: 9999px;
+	outline: none;
+}
+a.one {
+	position: absolute;
+	bottom: 8.75%;
+	width: 27.75%;
+	height: 12.25%;
+	left: 41.25%;
+}
+a.two {
+	bottom: 13.75%;
+	width: 27.75%;
+	height: 15.25%;
+	left: 37.625%;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.overlay {
+	max-height: 70px;
+	overflow: hidden;
+	display: flex;
+	align-items: baseline;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	filter: hue-rotate(4deg) contrast(110%) saturate(80%);
+}
+.text {
+	font-family: "hello-title";
+	position: absolute;
+	top: 8.56%;
+	left: 41.25%;
+	color: #672073;
+	font-size: 21px;
+}
