@@ -18,6 +18,7 @@ main {
 	width: fit-content;
 	max-width: 867px;
 	margin: 0 auto;
+	font-size: calc(min(100vw, 867px) / 86.7);
 }
 img {
 	display: block;
@@ -73,5 +74,5 @@ a.two {
 	top: 8.56%;
 	left: 41.25%;
 	color: #672073;
-	font-size: 21px;
+	font-size: 2.1em;
 }
