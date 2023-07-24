@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@font-face {
+				font-family: "hello-title";
+				src: url("./fonts/opensans/OpenSans-Regular.ttf");
+			}
+
+			body {
+				padding: 40px 0;
+				font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				outline: 0;
+			}
+
+			main {
+				--max-width: 867px;
+				position: relative;
+				width: fit-content;
+				max-width: var(--max-width);
+				margin: 0 auto;
+				font-size: calc(min(100vw, var(--max-width)) / 86.7);
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			a {
+				opacity: 0;
+				font-size: 12px;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				background-color: transparent;
+				color: transparent;
+				user-select: none;
+				border-radius: 9999px;
+				outline: none;
+			}
+			a.one {
+				position: absolute;
+				bottom: 8.75%;
+				width: 27.75%;
+				height: 12.25%;
+				left: 41.25%;
+			}
+			a.two {
+				bottom: 13.75%;
+				width: 27.75%;
+				height: 15.25%;
+				left: 37.625%;
+			}
+			.relative {
+				position: relative;
+			}
+			.absolute {
+				position: absolute;
+			}
+			.overlay {
+				max-height: 70px;
+				overflow: hidden;
+				display: flex;
+				align-items: baseline;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				filter: hue-rotate(4deg) contrast(110%) saturate(80%);
+			}
+			.text {
+				font-family: "hello-title";
+				position: absolute;
+				top: 8.56%;
+				left: 41.25%;
+				color: #672073;
+				font-size: 2.1em;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div><img src="https://i.imgur.com/aHaYAIs.png" /></div>
+			<div class="relative">
+				<img src="https://i.imgur.com/R67VsfB.png" />
+				<p class="text">Olá, Dr.(a) Marcelo! Tudo bem?</p>
+				<a class="one" href="https://segmentofarmaconteudo.com.br/THE/30237.pdf">Acesse a Discussão</a>
+			</div>
+			<div><img src="https://i.imgur.com/rCh3WFr.png" /></div>
+			<div><img src="https://i.imgur.com/cpkZO6f.png" /></div>
+			<div><img src="https://i.imgur.com/7EeBr2F.png" /></div>
+			<div class="relative">
+				<img src="https://i.imgur.com/0g6yetx.png" />
+				<a class="two" href="https://segmentofarmaconteudo.com.br/THE/30237.pdf">Acesse a Discussão</a>
+			</div>
+			<div><img src="https://i.imgur.com/jZ6RtAs.png" /></div>
+			<div><img src="https://i.imgur.com/3KeTMXK.png" /></div>
+		</main>
+	</body>
+</html>
